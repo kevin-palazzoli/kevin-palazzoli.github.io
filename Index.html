@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css">
+    <title>usando una api</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">
+                    inicio
+                </a>
+            </li>
+            <li>
+                <a href="/subpagina/documentos.html">
+                    documentos
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content-one">
+        <div class="profile">
+            <img id="profile" src="https://randomuser.me/api/portraits/women/87.jpg" alt="">
+            <h2 id="username">
+                Minerva
+            </h2>
+            <h3>
+                (diseñadora gráfica Senior)
+            </h3>
+        </div>
+        <section class="content-text">
+            <h3>
+                Sobre mi
+            </h3>
+            <p>
+                Diseñadora gráfica profesional con experiencia en las áreas de fotografía, 
+                diseño web, tipografía, ilustración y animación. 
+                Me considero una persona proactiva, organizada, responsable capaz de resolver cualquier problema de manera creativa.
+            </p>
+        </section>
+        <div class="content-two">
+            <p>
+                Pais
+                <span class="space" id="nationality">
+                    MX
+                </span>
+            </p>
+            <p>
+                calle y Numero
+                <span class="space" id="street">
+                    CIRCUITO TAMAULIPAS 9456
+                </span>
+                <span id="streetTwo">
+                    523
+                </span>
+            </p>
+        </div>
+
+
+        <div class="content-three">
+            <div>
+                <a id="mobile" title="" href="tel:(642) 175 4434">
+                    <span>
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                    </span>
+                </a>
+                <a id="gmail" title="" href="mailto:minerva.rosas@example.com">
+                    <span>
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-four">
+        <div>
+            <button class="data" id="btn">
+                reiniciar
+            </button>
+        </div>
+        <div>
+            <button class="switch" id="switch">
+                <span><i class="fas fa-moon black"></i></span>
+                <span><i class="fas fa-sun white"></i></span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
