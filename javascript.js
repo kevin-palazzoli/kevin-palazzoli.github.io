@@ -10,7 +10,7 @@ const gmail = document.querySelector('#gmail');
 const mobile = document.querySelector('#mobile');
 
 const users = async () => {
-    const url = 'https://randomuser.me/api/?nat=es,br,fr,mx,ca';
+    const url = 'https://randomuser.me/api/?gender=female';
     const reply = await fetch(url);
     const { results } = await reply.json();
     const datos = results[0];
