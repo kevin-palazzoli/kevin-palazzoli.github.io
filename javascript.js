@@ -1,6 +1,4 @@
 // variables
-const btn = document.querySelector('#btn');
-const btnSwitch = document.querySelector('#switch');
 const profile = document.querySelector('#profile');
 const username = document.querySelector('#username');
 const street = document.querySelector('#street');
@@ -8,6 +6,11 @@ const streetTwo = document.querySelector('#streetTwo');
 const nationality = document.querySelector('#nationality');
 const gmail = document.querySelector('#gmail');
 const mobile = document.querySelector('#mobile');
+//---------------------------- ----------------------------//
+const hideSwitch = document.querySelector('#hide');
+const hideTwoSwitch = document.querySelector('#hideTwo');
+const showSwitch = document.querySelector('#show');
+const btnSwitch = document.querySelector('#switch');
 
 const users = async () => {
     const url = 'https://randomuser.me/api/?gender=female';
@@ -26,8 +29,7 @@ const users = async () => {
 }
 
 // evento
-btn.addEventListener('click', users);
-
+document.addEventListener('DOMContentLoaded', users);
 
 // modo blanco y negro
 btnSwitch.addEventListener('click', () => {
@@ -48,3 +50,15 @@ if(localStorage.getItem('white-md') === 'true') {
   document.body.classList.remove('white');
   btnSwitch.classList.remove('active');
 }
+
+//---------------------------- ----------------------------//
+
+hideSwitch.addEventListener('click', () => {
+  document.body.classList.add('hide');
+  document.body.classList.add('hideTwo');
+});
+
+showSwitch.addEventListener('click', () => {
+  document.body.classList.remove('hide')
+  document.body.classList.remove('hideTwo');
+});
